@@ -7,10 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-            <h1>welcome</h1>
+            {{-- <h1>welcome</h1> --}}
             <h1><?php echo $name ?></h1>
             <h1><?php echo $text ?></h1>
+            <form action="store" method="post">
+                @csrf
+                <input type="text" name="name" id="name">
+                <button type="submit">send</button>
 
+
+            </form>
 
   </body>
 </html>
