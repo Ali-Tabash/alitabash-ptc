@@ -84,6 +84,14 @@ Route::get('contact',[site01controller::class,('contact')])->name('contact');
 Route::get('project',[site01controller::class,('project')])->name('project');
 });
 
-Route::get('contact',[taskscontroller::class,('index')])->name('contact.index');
-Route::get('contact/{id}',[taskscontroller::class,('show')])->name('contact.show');
+// Route::get('contact',[taskscontroller::class,('index')])->name('contact.index');
+Route::get('task',[taskscontroller::class,('index')])->name('task.index');
+// Route::get('contact/{id}',[taskscontroller::class,('show')])->name('contact.show');
 
+// Route::get('app',function(){
+//         return view('layout.app');
+// });
+// Route::get('task',function(){
+//     return view('layout.task');
+
+// });
